@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bulletproof — Backend engineering skills for AI coding agents</title>
+  <meta name="description" content="35 skills that teach AI coding agents how to build robust, resilient, production-ready backend systems. Architecture, resilience, security, observability, and more.">
+  <meta property="og:title" content="Bulletproof — Backend skills for AI agents">
+  <meta property="og:description" content="A senior backend engineer's knowledge, packaged as reusable skills for your AI assistant.">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Grid background -->
+  <div class="grid-bg" aria-hidden="true"></div>
+
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="#" class="nav-brand">
+        <span class="nav-logo">◆</span> Bulletproof
+      </a>
+      <div class="nav-links">
+        <a href="#skills">Skills</a>
+        <a href="#how-it-works">How it works</a>
+        <a href="#install">Install</a>
+        <a href="https://github.com/Mayhem50/bulletproof" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header class="hero" id="hero">
+    <div class="hero-badge">35 skills · 13 domains · 10 agents</div>
+    <h1 class="hero-title">
+      Backend engineering<br>
+      <span class="hero-accent">skills</span> for AI agents
+    </h1>
+    <p class="hero-sub">
+      A senior backend engineer's knowledge — architecture, resilience, security, observability, performance — packaged as reusable skills for your AI coding assistant.
+    </p>
+    <div class="hero-terminal">
+      <div class="terminal-bar">
+        <span class="terminal-dot red"></span>
+        <span class="terminal-dot yellow"></span>
+        <span class="terminal-dot green"></span>
+        <span class="terminal-title">terminal</span>
+      </div>
+      <div class="terminal-body">
+        <span class="terminal-prompt">$</span>
+        <span class="terminal-cmd">npx skills add Mayhem50/bulletproof</span>
+        <button class="terminal-copy" onclick="copyInstall()" title="Copy to clipboard">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><rect x="5" y="5" width="9" height="9" rx="1.5" stroke="currentColor" stroke-width="1.5"/><path d="M11 5V3.5A1.5 1.5 0 009.5 2h-6A1.5 1.5 0 002 3.5v6A1.5 1.5 0 003.5 11H5" stroke="currentColor" stroke-width="1.5"/></svg>
+        </button>
+      </div>
+    </div>
+    <div class="hero-agents">
+      Works with <strong>Claude Code</strong>, <strong>Cursor</strong>, <strong>Copilot</strong>, <strong>Gemini</strong>, <strong>Codex</strong>, <strong>Kiro</strong>, and more
+    </div>
+  </header>
+
+  <!-- Skills -->
+  <section class="section" id="skills">
+    <div class="section-header">
+      <span class="section-number">01</span>
+      <h2 class="section-title">Skills</h2>
+      <p class="section-sub">34 slash commands across 13 backend domains. Each one is a focused, opinionated prompt that knows the best practices so you don't have to remember them all.</p>
+    </div>
+
+    <div class="skills-grid">
+      <div class="skill-group">
+        <h3 class="skill-group-title"><span class="skill-icon">🏗</span> Architecture</h3>
+        <div class="skill-card" data-skill="architect">
+          <code>/architect</code>
+          <p>Evaluate and propose architecture patterns adapted to context</p>
+        </div>
+        <div class="skill-card" data-skill="model">
+          <code>/model</code>
+          <p>Analyze business domain, bounded contexts, aggregates (DDD)</p>
+        </div>
+        <div class="skill-card" data-skill="split">
+          <code>/split</code>
+          <p>Decompose a monolith or trace module/service boundaries</p>
+        </div>
+      </div>
+
+      <div class="skill-group">
+        <h3 class="skill-group-title"><span class="skill-icon">📡</span> API</h3>
+        <div class="skill-card" data-skill="contract">
+          <code>/contract</code>
+          <p>Audit API surface: naming, pagination, errors, versioning</p>
+        </div>
+        <div class="skill-card" data-skill="evolve">
+          <code>/evolve</code>
+          <p>Verify backward compatibility, migration/deprecation strategy</p>
+        </div>
+      </div>
+
+      <div class="skill-group">
+        <h3 class="skill-group-title"><span class="skill-icon">💾</span> Data</h3>
+        <div class="skill-card" data-skill="schema">
+          <code>/schema</code>
+          <p>Audit DB schema: normalization, indexes, anti-patterns</p>
+        </div>
+        <div class="skill-card" data-skill="migrate">
+          <code>/migrate</code>
+          <p>Generate zero-downtime migrations (expand/contract)</p>
+        </div>
+        <div class="skill-card" data-skill="cache">
+          <code>/cache</code>
+          <p>Identify caching opportunities, strategy, invalidation</p>
+        </div>
+      </div>
+
+      <div class="skill-group">
+        <h3 class="skill-group-title"><span class="skill-icon">🛡</span> Resilience</h3>
+        <div class="skill-card" data-skill="fortify">
+          <code>/fortify</code>
+          <p>Add circuit breakers, bulkheads, timeouts, fallbacks</p>
+        </div>
+        <div class="skill-card" data-skill="retry">
+          <code>/retry</code>
+          <p>Audit retry policies, idempotency keys, backoff, DLQ</p>
+        </div>
+        <div class="skill-card" data-skill="throttle">
+          <code>/throttle</code>
+          <p>Implement backpressure, load shedding, rate limiting</p>
+        </div>
+      </div>
+
+      <div class="skill-group">
+        <h3 class="skill-group-title"><span class="skill-icon">⚡</span> Concurrency</h3>
+        <div class="skill-card" data-skill="async">
+          <code>/async</code>
+          <p>Audit async flows, queues, workers, sagas</p>
+        </div>
+        <div class="skill-card" data-skill="race">
+          <code>/race</code>
+          <p>Detect race conditions, missing locks, optimistic concurrency</p>
+        </div>
+      </div>
+
+      <div class="skill-group">
+        <h3 class="skill-group-title"><span class="skill-icon">🔒</span> Security</h3>
+        <div class="skill-card" data-skill="harden">
+          <code>/harden</code>
+          <p>Scan OWASP top 10: injection, secrets, headers</p>
+        </div>
+        <div class="skill-card" data-skill="authz">
+          <code>/authz</code>
+          <p>Audit AuthN/AuthZ: JWT, RBAC/ABAC, multi-tenancy</p>
+        </div>
+        <div class="skill-card" data-skill="secrets">
+          <code>/secrets</code>
+          <p>Detect exposed secrets, rotation, vault patterns</p>
+        </div>
+      </div>
+
+      <div class="skill-group">
+        <h3 class="skill-group-title"><span class="skill-icon">📊</span> Observability</h3>
+        <div class="skill-card" data-skill="observe">
+          <code>/observe</code>
+          <p>Structured logging, correlation IDs, OpenTelemetry spans</p>
+        </div>
+        <div class="skill-card" data-skill="slo">
+          <code>/slo</code>
+          <p>Define golden signals, SLOs, alerts, error budgets</p>
+        </div>
+        <div class="skill-card" data-skill="probe">
+          <code>/probe</code>
+          <p>Implement liveness/readiness probes</p>
+        </div>
+      </div>
+
+      <div class="skill-group">
+        <h3 class="skill-group-title"><span class="skill-icon">🚀</span> Performance</h3>
+        <div class="skill-card" data-skill="profile">
+          <code>/profile</code>
+          <p>Detect N+1, slow queries, hot paths</p>
+        </div>
+        <div class="skill-card" data-skill="stress">
+          <code>/stress</code>
+          <p>Generate load test scenarios, identify bottlenecks</p>
+        </div>
+      </div>
+
+      <div class="skill-group">
+        <h3 class="skill-group-title"><span class="skill-icon">🧪</span> Testing</h3>
+        <div class="skill-card" data-skill="testplan">
+          <code>/testplan</code>
+          <p>Propose the right test pyramid for the project</p>
+        </div>
+        <div class="skill-card" data-skill="chaos">
+          <code>/chaos</code>
+          <p>Generate fault injection scenarios, game days</p>
+        </div>
+        <div class="skill-card" data-skill="pact">
+          <code>/pact</code>
+          <p>Consumer-driven contract testing between services</p>
+        </div>
+      </div>
+
+      <div class="skill-group">
+        <h3 class="skill-group-title"><span class="skill-icon">💥</span> Error Handling</h3>
+        <div class="skill-card" data-skill="errors">
+          <code>/errors</code>
+          <p>Structure errors (domain/infra/transient), propagation</p>
+        </div>
+        <div class="skill-card" data-skill="recover">
+          <code>/recover</code>
+          <p>Rollback/compensation logic, saga failure paths</p>
+        </div>
+      </div>
+
+      <div class="skill-group">
+        <h3 class="skill-group-title"><span class="skill-icon">🚢</span> Deployment</h3>
+        <div class="skill-card" data-skill="deploy">
+          <code>/deploy</code>
+          <p>Audit deploy strategy: blue/green, canary, rollback</p>
+        </div>
+        <div class="skill-card" data-skill="flags">
+          <code>/flags</code>
+          <p>Progressive rollout, kill switches, flag cleanup</p>
+        </div>
+      </div>
+
+      <div class="skill-group">
+        <h3 class="skill-group-title"><span class="skill-icon">🔗</span> Inter-services</h3>
+        <div class="skill-card" data-skill="orchestrate">
+          <code>/orchestrate</code>
+          <p>Event-driven, event sourcing, CDC, outbox pattern</p>
+        </div>
+        <div class="skill-card" data-skill="gateway">
+          <code>/gateway</code>
+          <p>Configure routing, aggregation, auth at gateway level</p>
+        </div>
+      </div>
+
+      <div class="skill-group">
+        <h3 class="skill-group-title"><span class="skill-icon">🔧</span> Operations</h3>
+        <div class="skill-card" data-skill="audit">
+          <code>/audit</code>
+          <p>Global multi-dimension score across all 13 domains</p>
+        </div>
+        <div class="skill-card" data-skill="teach">
+          <code>/teach</code>
+          <p>Collect stack, constraints, SLOs into .bulletproof.md</p>
+        </div>
+        <div class="skill-card" data-skill="diagnose">
+          <code>/diagnose</code>
+          <p>Systematic investigation of a production incident</p>
+        </div>
+        <div class="skill-card" data-skill="postmortem">
+          <code>/postmortem</code>
+          <p>Structure a post-mortem: timeline, root cause, actions</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How it works -->
+  <section class="section" id="how-it-works">
+    <div class="section-header">
+      <span class="section-number">02</span>
+      <h2 class="section-title">How it works</h2>
+      <p class="section-sub">Bulletproof teaches your AI agent to think like a senior backend engineer.</p>
+    </div>
+
+    <div class="how-grid">
+      <div class="how-card">
+        <div class="how-step">1</div>
+        <h3>Teach your project</h3>
+        <p>Run <code>/teach</code> once. It scans your codebase, asks about your stack and constraints, and saves context to <code>.bulletproof.md</code>.</p>
+      </div>
+      <div class="how-card">
+        <div class="how-step">2</div>
+        <h3>Use skills as needed</h3>
+        <p>Type a slash command like <code>/fortify</code> or <code>/schema</code>. The agent analyzes your code against real-world best practices and produces an actionable report.</p>
+      </div>
+      <div class="how-card">
+        <div class="how-step">3</div>
+        <h3>Audit everything</h3>
+        <p>Run <code>/audit</code> for a comprehensive health check across all 13 domains. Get a scored report with prioritized fixes — from P0 critical to P3 nice-to-have.</p>
+      </div>
+    </div>
+
+    <div class="how-detail">
+      <h3>Backed by deep reference material</h3>
+      <p>Every skill is supported by 7 reference documents — over 5,000 lines of dense, actionable backend engineering knowledge covering resilience patterns, data design, API conventions, observability, security, concurrency, and testing.</p>
+      <div class="ref-tags">
+        <span class="ref-tag">resilience.md</span>
+        <span class="ref-tag">data-patterns.md</span>
+        <span class="ref-tag">api-design.md</span>
+        <span class="ref-tag">observability.md</span>
+        <span class="ref-tag">security.md</span>
+        <span class="ref-tag">concurrency.md</span>
+        <span class="ref-tag">testing.md</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Install -->
+  <section class="section" id="install">
+    <div class="section-header">
+      <span class="section-number">03</span>
+      <h2 class="section-title">Get started</h2>
+      <p class="section-sub">Install in seconds. Works with every major AI coding agent.</p>
+    </div>
+
+    <div class="install-grid">
+      <div class="install-card primary">
+        <h3>Quick install</h3>
+        <div class="install-terminal">
+          <div class="terminal-bar">
+            <span class="terminal-dot red"></span>
+            <span class="terminal-dot yellow"></span>
+            <span class="terminal-dot green"></span>
+          </div>
+          <div class="terminal-body">
+            <div class="terminal-line">
+              <span class="terminal-prompt">$</span>
+              <span class="terminal-cmd">npx skills add Mayhem50/bulletproof</span>
+            </div>
+          </div>
+        </div>
+        <p class="install-note">Auto-detects your agent and installs the right skill files.</p>
+      </div>
+
+      <div class="install-card">
+        <h3>Claude Code</h3>
+        <div class="install-terminal small">
+          <div class="terminal-body">
+            <div class="terminal-line">
+              <span class="terminal-prompt">$</span>
+              <span class="terminal-cmd">claude mcp add-skill bulletproof</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="install-card">
+        <h3>Manual</h3>
+        <p class="install-manual">Copy the contents of <code>.claude/skills/</code> (or <code>.cursor/skills/</code>, etc.) from the <a href="https://github.com/Mayhem50/bulletproof" target="_blank">GitHub repo</a> into your project.</p>
+      </div>
+    </div>
+
+    <div class="agents-list">
+      <h3>Supported agents</h3>
+      <div class="agent-tags">
+        <span class="agent-tag">Claude Code</span>
+        <span class="agent-tag">Cursor</span>
+        <span class="agent-tag">GitHub Copilot</span>
+        <span class="agent-tag">Gemini CLI</span>
+        <span class="agent-tag">Codex CLI</span>
+        <span class="agent-tag">Kiro</span>
+        <span class="agent-tag">OpenCode</span>
+        <span class="agent-tag">Trae</span>
+        <span class="agent-tag">Pi</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="nav-logo">◆</span> <strong>Bulletproof</strong>
+        <p>Backend engineering skills for AI coding agents.</p>
+      </div>
+      <div class="footer-links">
+        <a href="https://github.com/Mayhem50/bulletproof" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://github.com/Mayhem50/bulletproof/blob/main/DEVELOP.md" target="_blank" rel="noopener">Contributing</a>
+        <a href="https://github.com/Mayhem50/bulletproof/blob/main/LICENSE" target="_blank" rel="noopener">Apache 2.0</a>
+      </div>
+      <div class="footer-credit">
+        Inspired by <a href="https://impeccable.style" target="_blank" rel="noopener">Impeccable</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
