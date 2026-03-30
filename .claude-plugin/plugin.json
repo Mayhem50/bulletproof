@@ -1,0 +1,10 @@
+{
+  "name": "bulletproof",
+  "description": "Backend engineering skills for AI coding agents. 34 skills across 13 domains: architecture, API design, data, resilience, concurrency, security, observability, performance, testing, error handling, deployment, inter-services, and operations.",
+  "version": "0.1.0",
+  "author": {
+    "name": "Mayhem50"
+  },
+  "repository": "https://github.com/Mayhem50/bulletproof",
+  "skills": "./.claude/skills"
+}

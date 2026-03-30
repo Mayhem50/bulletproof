@@ -1,0 +1,18 @@
+{
+  "categories": ["backend", "architecture", "security", "devops", "testing"],
+  "tags": [
+    "backend",
+    "resilience",
+    "security",
+    "observability",
+    "architecture",
+    "api-design",
+    "database",
+    "testing",
+    "deployment",
+    "performance",
+    "ddd",
+    "microservices",
+    "sre"
+  ]
+}
