@@ -1,0 +1,11 @@
+node_modules/
+dist/
+build/
+*.log
+.DS_Store
+.vscode/
+.idea/
+.env
+.env.local
+.bulletproof.md
+bun.lock

@@ -1,0 +1,17 @@
+{
+  "name": "bulletproof",
+  "version": "0.1.0",
+  "description": "Backend engineering skills for AI coding agents",
+  "author": "Mayhem50",
+  "license": "Apache-2.0",
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.js",
+    "clean": "rm -rf dist build",
+    "rebuild": "npm run clean && npm run build",
+    "test": "node --test"
+  },
+  "dependencies": {
+    "archiver": "^7.0.1"
+  }
+}
